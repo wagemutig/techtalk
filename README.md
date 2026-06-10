@@ -159,10 +159,10 @@ The result is a scalable and practical solution that transforms traditional lang
 
 ## 👥 Authors
 
+- Oliver Schulthess
+- Jonas Schubnell
 - Aaron Schmid
 - Colin Schmid
-- Jonas Schubnell
-- Oliver Schulthess
 
 ---
 
