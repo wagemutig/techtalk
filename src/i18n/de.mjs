@@ -13,7 +13,7 @@ export const de = {
   },
 
   hero: {
-    badge: 'hackAstone Projekt · PHZH × afca.ag',
+    badge: 'PHZH × afca.ag',
     title: 'TALK-TECH',
     subtitle: 'KI-gestützte Gesprächssimulation für<br class="hidden md:block" /> <span class="font-semibold text-white">technisches Englisch</span>',
     description: 'Ein immersiver, adaptiver Lernprototyp, der generative KI und XR kombiniert, um allen Lernenden einer Berufsfachschulklasse gleichzeitig realistische, individuelle technische Fachgespräche auf Englisch zu ermöglichen.',

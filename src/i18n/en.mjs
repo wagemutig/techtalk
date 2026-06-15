@@ -15,7 +15,7 @@ export const en = {
 
   // Hero
   hero: {
-    badge: 'hackAstone Project · PHZH × afca.ag',
+    badge: 'PHZH × afca.ag',
     title: 'TALK-TECH',
     subtitle: 'AI-Powered Conversation Simulation for<br class="hidden md:block" /> <span class="font-semibold text-white">Technical English Education</span>',
     description: 'An immersive, adaptive learning prototype combining generative AI and XR to enable every student in a vocational class to simultaneously practice realistic, one-to-one technical conversations in English.',
