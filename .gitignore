@@ -122,6 +122,12 @@ dist
 # TernJS port file
 .tern-port
 
+# Astro dev cache
+.astro/
+
+# VSCode
+.vscode/
+
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
