@@ -3,7 +3,7 @@ export const team = [
   { name: 'Oliver Schulthess', role: 'Project Lead & Didactic Concept', initials: 'OS', gradient: 'from-blue-400 to-cyan-300' },
   { name: 'Jonas Schubnell', role: 'AI Prompt Engineering & Prototyping', initials: 'JS', gradient: 'from-emerald-400 to-teal-300' },
   { name: 'Aaron Schmid', role: 'Technical Architecture & XR Integration', initials: 'AS', gradient: 'from-violet-400 to-purple-300' },
-  { name: 'Colin Schmid', role: 'Evaluation & Curriculum Alignment', initials: 'CS', gradient: 'from-amber-400 to-orange-300' },
+  { name: 'Colin Schmid', role: 'Interaction Design', initials: 'CS', gradient: 'from-amber-400 to-orange-300' },
 ];
 
 const { t, locale } = Astro.props;
@@ -180,9 +180,7 @@ const { t, locale } = Astro.props;
       <!-- Ms. Goodwill -->
       <div class="glass rounded-2xl p-8 border border-blue-500/10 avatar-card transition-all duration-300">
         <div class="flex items-start gap-5 mb-6">
-          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-400 to-cyan-300 flex items-center justify-center shrink-0">
-            <span class="text-white font-bold text-xl">{t.avatars.goodwill.initials}</span>
-          </div>
+          <img src="/techtalk/images/avatar_msgoodwill.png" alt="Ms. Goodwill" class="w-16 h-16 rounded-2xl object-cover shrink-0" />
           <div>
             <h3 class="text-xl font-bold text-white">{t.avatars.goodwill.name}</h3>
             <p class="text-sm text-blue-300 font-medium">{t.avatars.goodwill.role}</p>
@@ -202,9 +200,7 @@ const { t, locale } = Astro.props;
       <!-- Mr. Barker -->
       <div class="glass rounded-2xl p-8 border border-emerald-500/10 avatar-card transition-all duration-300">
         <div class="flex items-start gap-5 mb-6">
-          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-300 flex items-center justify-center shrink-0">
-            <span class="text-white font-bold text-xl">{t.avatars.barker.initials}</span>
-          </div>
+          <img src="/techtalk/images/avatar_mrbarker.png" alt="Mr. Barker" class="w-16 h-16 rounded-2xl object-cover shrink-0" />
           <div>
             <h3 class="text-xl font-bold text-white">{t.avatars.barker.name}</h3>
             <p class="text-sm text-emerald-300 font-medium">{t.avatars.barker.role}</p>
@@ -285,17 +281,31 @@ const { t, locale } = Astro.props;
       <p class="text-slate-400 max-w-2xl mx-auto">{t.partners.subtitle}</p>
     </div>
     <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
-      {t.partners.list.map((partner) => (
-        <a href={partner.url} target="_blank" class="glass rounded-2xl p-6 border border-white/5 text-center hover:bg-white/[0.08] transition-all duration-300 group block">
-          <div class="w-14 h-14 mx-auto rounded-xl bg-brand-500/10 flex items-center justify-center mb-4 group-hover:bg-brand-500/20 transition-colors">
-            <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-            </svg>
+      {t.partners.list.map((partner) => {
+        const logoMap = {
+          'PHZH': 'phzh-logo.svg',
+          'afca': 'afca-logo.svg',
+          'IMMERSE': 'immerse-logo.png',
+          'FutureMEM': 'futuremem-logo.svg',
+        };
+        const logoKey = Object.keys(logoMap).find(k => partner.name.includes(k));
+        return (
+        <a href={partner.url} target="_blank" class="glass rounded-2xl p-6 border border-white/5 text-center hover:bg-white/[0.08] transition-all duration-300 group block flex flex-col items-center justify-center min-h-[160px]">
+          <div class="w-full h-20 flex items-center justify-center mb-4 px-4">
+            {logoKey ? (
+              <img src={`/techtalk/images/${logoMap[logoKey]}`} alt={partner.name} class="max-h-full max-w-full object-contain brightness-0 invert opacity-70 group-hover:opacity-100 transition-all" />
+            ) : (
+              <div class="w-14 h-14 rounded-xl bg-brand-500/10 flex items-center justify-center group-hover:bg-brand-500/20 transition-colors">
+                <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+            )}
           </div>
           <h3 class="text-sm font-semibold text-white group-hover:text-brand-400 transition-colors">{partner.name}</h3>
           <p class="text-xs text-slate-500 mt-2">{partner.desc}</p>
         </a>
-      ))}
+      );})}
     </div>
   </div>
 </section>

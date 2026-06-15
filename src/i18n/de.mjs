@@ -143,7 +143,7 @@ export const de = {
       { name: 'Oliver Schulthess', role: 'Projektleitung & Didaktisches Konzept', initials: 'OS', gradient: 'from-blue-400 to-cyan-300' },
       { name: 'Jonas Schubnell', role: 'KI-Prompt-Engineering & Prototyping', initials: 'JS', gradient: 'from-emerald-400 to-teal-300' },
       { name: 'Aaron Schmid', role: 'Technische Architektur & XR-Integration', initials: 'AS', gradient: 'from-violet-400 to-purple-300' },
-      { name: 'Colin Schmid', role: 'Evaluation & Curriculum-Abstimmung', initials: 'CS', gradient: 'from-amber-400 to-orange-300' },
+      { name: 'Colin Schmid', role: 'Interaction Design', initials: 'CS', gradient: 'from-amber-400 to-orange-300' },
     ],
   },
 
