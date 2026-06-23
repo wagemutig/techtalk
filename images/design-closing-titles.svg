@@ -167,19 +167,18 @@
     </g>
   </g>
 
-  <!-- ════════ PLACEHOLDER TEXT BOXES ════════ -->
+  <!-- ════════ TAGLINE ════════ -->
   <g transform="translate(960, 960)">
-    <!-- Tagline placeholder -->
-    <g transform="translate(-210, 0)">
-      <rect width="420" height="36" rx="8" fill="none" stroke="#3b82f6" stroke-width="1" stroke-dasharray="6 4" opacity="0.4"/>
-      <text x="210" y="23" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="12" fill="#3b82f6" opacity="0.6">[ YOUR TAGLINE HERE ]</text>
-    </g>
+    <text text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="16" fill="#94a3b8" letter-spacing="0.02em">
+      Enabling every student to practice realistic technical conversations in English
+    </text>
+  </g>
 
-    <!-- Contact placeholder -->
-    <g transform="translate(-210, 48)">
-      <rect width="420" height="36" rx="8" fill="none" stroke="#10b981" stroke-width="1" stroke-dasharray="6 4" opacity="0.4"/>
-      <text x="210" y="23" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="12" fill="#10b981" opacity="0.6">[ WEBSITE / CONTACT HERE ]</text>
-    </g>
+  <!-- ════════ CONTACT / URL ════════ -->
+  <g transform="translate(960, 1000)">
+    <text text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="18" fill="#3b82f6" letter-spacing="0.05em">
+      wagemutig.github.io/talktech
+    </text>
   </g>
 
   <!-- ════════ FOOTER ════════ -->
@@ -195,9 +194,9 @@
     1. IMPORT: Drop into Premiere Pro, After Effects, DaVinci Resolve, or FCP.
        Scale to 1920×1080. The SVG uses viewBox so it scales perfectly.
 
-    2. PLACEHOLDERS: Two dashed boxes at the bottom for custom overlays:
-       - Tagline: Campaign slogan, key message, or call to action
-       - Contact: URL, email, social handle
+    2. ALL PLACEHOLDERS NOW FILLED with website content:
+       - Tagline: "Enabling every student to practice realistic technical conversations in English"
+       - Contact: "wagemutig.github.io/talktech"
 
     3. PARTNER LOGOS: The partner boxes use text placeholders.
        To use real logos, export them as PNG with transparency and
