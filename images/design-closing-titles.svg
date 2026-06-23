@@ -85,13 +85,10 @@
     <text y="40" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="18" fill="#cbd5e1">
       Zurich University of Teacher Education (PHZH)
     </text>
-    <text y="68" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="16" fill="#64748b">
-      Funded by the Digitalization Initiative of the Zurich Universities (DIZH)
-    </text>
   </g>
 
   <!-- ════════ TEAM ════════ -->
-  <g transform="translate(960, 530)">
+  <g transform="translate(960, 500)">
     <text text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="13" fill="#3b82f6" letter-spacing="0.2em" text-transform="uppercase">
       THE TEAM
     </text>
@@ -129,54 +126,45 @@
   </g>
 
   <!-- ════════ PARTNERS ════════ -->
-  <g transform="translate(960, 780)">
+  <g transform="translate(960, 740)">
     <text text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="13" fill="#3b82f6" letter-spacing="0.2em" text-transform="uppercase">
       PARTNERS &amp; ECOSYSTEM
     </text>
 
-    <!-- Partner logo boxes -->
+    <!-- Partner logos -->
     <g transform="translate(-420, 40)">
       <!-- PHZH -->
       <g transform="translate(0, 0)">
         <rect width="200" height="90" rx="16" fill="url(#glassGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-        <text x="100" y="35" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="20" fill="#e2e8f0">PHZH</text>
-        <text x="100" y="58" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="11" fill="#64748b">Pädagogische Hochschule Zürich</text>
-        <text x="100" y="76" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="10" fill="#475569">Academic Partner</text>
+        <image href="phzh-logo.svg" x="20" y="15" width="160" height="60" preserveAspectRatio="xMidYMid meet"/>
       </g>
 
       <!-- afca -->
       <g transform="translate(220, 0)">
         <rect width="200" height="90" rx="16" fill="url(#glassGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-        <text x="100" y="40" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="22" fill="#e2e8f0">afca. ag</text>
-        <text x="100" y="68" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="11" fill="#64748b">Technology Partner</text>
+        <image href="afca-logo.svg" x="20" y="15" width="160" height="60" preserveAspectRatio="xMidYMid meet"/>
       </g>
 
-      <!-- DIZH -->
+      <!-- IMMERSE -->
       <g transform="translate(440, 0)">
         <rect width="200" height="90" rx="16" fill="url(#glassGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-        <text x="100" y="40" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="22" fill="#e2e8f0">DIZH</text>
-        <text x="100" y="68" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="11" fill="#64748b">Digitalization Initiative ZH</text>
+        <image href="immerse-logo.png" x="20" y="15" width="160" height="60" preserveAspectRatio="xMidYMid meet"/>
       </g>
 
       <!-- FutureMEM -->
       <g transform="translate(660, 0)">
         <rect width="200" height="90" rx="16" fill="url(#glassGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-        <text x="100" y="40" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="20" fill="#e2e8f0">FutureMEM</text>
-        <text x="100" y="68" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="11" fill="#64748b">Curriculum Reform</text>
+        <image href="futuremem-logo.svg" x="20" y="25" width="160" height="40" preserveAspectRatio="xMidYMid meet"/>
       </g>
     </g>
   </g>
 
-  <!-- ════════ TAGLINE ════════ -->
-  <g transform="translate(960, 960)">
-    <text text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="16" fill="#94a3b8" letter-spacing="0.02em">
+  <!-- ════════ TAGLINE & CONTACT ════════ -->
+  <g transform="translate(960, 940)">
+    <text text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="18" fill="#94a3b8" letter-spacing="0.02em">
       Enabling every student to practice realistic technical conversations in English
     </text>
-  </g>
-
-  <!-- ════════ CONTACT / URL ════════ -->
-  <g transform="translate(960, 1000)">
-    <text text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="18" fill="#3b82f6" letter-spacing="0.05em">
+    <text y="32" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="16" fill="#3b82f6">
       wagemutig.github.io/talktech
     </text>
   </g>
@@ -194,35 +182,20 @@
     1. IMPORT: Drop into Premiere Pro, After Effects, DaVinci Resolve, or FCP.
        Scale to 1920×1080. The SVG uses viewBox so it scales perfectly.
 
-    2. ALL PLACEHOLDERS NOW FILLED with website content:
-       - Tagline: "Enabling every student to practice realistic technical conversations in English"
-       - Contact: "wagemutig.github.io/talktech"
+    2. PARTNER LOGOS: Real logos are embedded via <image> tags referencing
+       the logo files. They render automatically in browsers and most editors.
+       If your editor doesn't support external SVG references, export the
+       closing titles as PNG from a browser and use that.
 
-    3. PARTNER LOGOS: The partner boxes use text placeholders.
-       To use real logos, export them as PNG with transparency and
-       overlay in your editor, OR uncomment the <image> section below.
-
-    4. ANIMATION IDEAS (film look):
+    3. ANIMATION IDEAS (film look):
        - Fade in title from 0% with slight upward drift (y +20 → 0)
        - Stagger team cards: 0.1s delay between each
        - Partner boxes: subtle scale-in (0.95 → 1.0) with opacity
        - Add subtle camera shake or film gate flicker
        - Grain layer is baked in — no extra work needed
 
-    5. COLOR CUSTOMIZATION:
+    4. COLOR CUSTOMIZATION:
        Edit the gradient stops in <defs> to match your brand.
        Current: #3b82f6 (blue) → #10b981 (emerald)
-  -->
-
-  <!-- ════════ REAL LOGO IMAGES (uncomment to use) ════════ -->
-  <!--
-  <g transform="translate(960, 820)">
-    <g transform="translate(-420, 0)">
-      <image href="phzh-logo.svg" x="0" y="0" width="200" height="90" preserveAspectRatio="xMidYMid meet"/>
-      <image href="afca-logo.svg" x="220" y="0" width="200" height="90" preserveAspectRatio="xMidYMid meet"/>
-      <image href="dizh-logo.png" x="440" y="0" width="200" height="90" preserveAspectRatio="xMidYMid meet"/>
-      <image href="futuremem-logo.svg" x="660" y="0" width="200" height="90" preserveAspectRatio="xMidYMid meet"/>
-    </g>
-  </g>
   -->
 </svg>
